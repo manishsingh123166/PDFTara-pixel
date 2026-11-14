@@ -1,4 +1,7 @@
-# Build with: trunk build --release   (from apps/PDFTara Pixel-web)
+
+# PDFTara Pixel Web
+# Build with: trunk build --release (run from this directory)
+
 [build]
 target = "index.html"
 dist = "../../dist/web"
