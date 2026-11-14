@@ -1,0 +1,43 @@
+[package]
+name = "PDFTara Pixel-web"
+description = "PDFTara Pixel in the browser (eframe web runner, WebGPU with WebGL2 fallback)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[features]
+# Open HEIC/HEIF photos (the optional craft-heif crate). Not default so distributors choose
+# it; official builds (CI, packaging/, release) build with `--features heif`.
+heif = ["PDFTara Pixel-codecs/heif"]
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "PDFTara Pixel-web"
+path = "src/main.rs"
+
+[dependencies]
+PDFTara Pixel-engine = { workspace = true }
+PDFTara Pixel-io = { workspace = true }
+PDFTara Pixel-codecs = { workspace = true }
+PDFTara Pixel-doc = { workspace = true }
+PDFTara Pixel-ui-egui = { workspace = true }
+PDFTara Pixel-raster = { workspace = true }
+egui = { workspace = true }
+log = { workspace = true }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+# `wgpu` pulls egui-wgpu's defaults: WebGPU plus the WebGL2 fallback.
+eframe = { workspace = true, features = ["wgpu", "accesskit", "clipboard"] }
+rfd = { workspace = true }
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+web-sys = { version = "0.3", features = ["Window", "Document", "Element", "HtmlElement", "HtmlCanvasElement", "DomRect", "HtmlAnchorElement", "Blob", "BlobPropertyBag", "Url", "Location", "CssStyleDeclaration", "Storage", "Event", "EventTarget", "MouseEvent", "PointerEvent", "BeforeUnloadEvent", "AbortController", "AbortSignal", "DomException", "Response", "IdbFactory", "IdbOpenDbRequest", "IdbDatabase", "IdbRequest", "IdbTransaction", "IdbTransactionMode", "IdbObjectStore", "IdbCursor", "IdbCursorWithValue", "RequestInit", "RequestMode", "Navigator", "ErrorEvent", "PromiseRejectionEvent"] }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+PDFTara Pixel-paint = { workspace = true }
+craft-psd = { workspace = true }

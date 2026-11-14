@@ -1,0 +1,66 @@
+[package]
+name = "PDFTara pixel-automation"
+description = "MCP server (rmcp) over the PDFTara pixel engine, plus a bridge to a running GUI"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[features]
+default = []
+gpu = [
+    "dep:PDFTara pixel-gpu",
+    "dep:wgpu",
+    "dep:pollster",
+    "PDFTara pixel-gpu/native",
+]
+
+[lints]
+workspace = true
+
+[dependencies]
+PDFTara pixel-doc = { workspace = true }
+PDFTara pixel-raster = { workspace = true }
+PDFTara pixel-compose = { workspace = true }
+PDFTara pixel-codecs = { workspace = true }
+PDFTara pixel-formats = { workspace = true }
+PDFTara pixel-io = { workspace = true }
+PDFTara pixel-format = { path = "../format" }
+PDFTara pixel-engine = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+rmcp = { version = "3.5", default-features = false, features = ["server", "macros", "transport-io"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "io-std", "sync", "net", "io-util", "time"] }
+base64 = "0.23"
+schemars = "1"
+getrandom = { workspace = true }
+# HMAC-SHA256 for the control channel's challenge authentication: the token never crosses the wire (NV-6).
+hmac = "0.12"
+sha2 = "0.10"
+cap-std = "4"
+clap = { workspace = true }
+# The suite's AI-MCP flag and the PDFTara pixel Launcher's agents switch (the one consent for agents).
+craft-flags = { workspace = true }
+craft-ai-agents = { workspace = true }
+
+# Optional native GPU rendering backend
+PDFTara pixel-gpu = { workspace = true, optional = true }
+wgpu = { version = "30", default-features = false, features = ["std", "wgsl"], optional = true }
+pollster = { version = "1", optional = true }
+
+[dev-dependencies]
+PDFTara pixel-color = { workspace = true }
+PDFTara pixel-geom = { workspace = true }
+# Synthetic camera raws (#7789).
+PDFTara pixel-raw = { workspace = true, features = ["testgen"] }
+# Tiny generated PSDs and the scoped estimate charge for the high-memory approval tests
+# (no multi-gigabyte fixture or global override).
+PDFTara pixel-io = { workspace = true, features = ["testgen"] }
+craft-psd = { workspace = true, features = ["testgen"] }
+rmcp = { version = "3.5", default-features = false, features = ["client", "server", "macros", "transport-io"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "io-std", "sync", "net", "io-util", "time"] }
+
+# Reading back an extended attribute the write path should have preserved (#7095).
+[target.'cfg(unix)'.dev-dependencies]
+rustix = { version = "1.1", default-features = false, features = ["std", "fs"] }

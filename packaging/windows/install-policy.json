@@ -1,0 +1,305 @@
+{
+  "id": "PDFTara Pixel",
+  "name": "PDFTara Pixel",
+  "upgradeCode": "D9660F32-2D0A-4ABE-B73D-17BE25F1542C",
+  "sources": [
+    "PDFTara Pixel.wxs"
+  ],
+  "icon": "assets/app-icon/PDFTara Pixel.ico",
+  "localization": [
+    "PDFTara Pixel.en-us.wxl"
+  ],
+  "extensions": [
+    "UI",
+    "Util"
+  ],
+  "payloads": [
+    "PDFTara Pixel-cli.exe",
+    "PDFTara Pixel.exe"
+  ],
+  "registry": [
+    [
+      "-1",
+      "Software\\Classes\\PDFTara Pixel.PhotoshopDocument\\shell\\open\\command",
+      "",
+      "\"[#PDFTara PixelExe]\" \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\PDFTara Pixel.Image\\shell\\open\\command",
+      "",
+      "\"[#PDFTara PixelExe]\" \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.psd\\OpenWithProgids",
+      "PDFTara Pixel.PhotoshopDocument",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.psb\\OpenWithProgids",
+      "PDFTara Pixel.PhotoshopDocument",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.pdn\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.ora\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.kra\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.krz\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.png\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.jpg\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.jpeg\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.tif\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.tiff\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.webp\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.gif\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.bmp\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.tga\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.exr\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.hdr\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.avif\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.qoi\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.ico\\OpenWithProgids",
+      "PDFTara Pixel.Image",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe",
+      "FriendlyAppName",
+      "PDFTara Pixel"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\shell\\open\\command",
+      "",
+      "\"[#PDFTara PixelExe]\" \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".pcraft",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".psd",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".psb",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".pdn",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".ora",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".kra",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".krz",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".png",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".jpg",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".jpeg",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".tif",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".tiff",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".webp",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".gif",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".bmp",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".tga",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".exr",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".hdr",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".avif",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".qoi",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\PDFTara Pixel.exe\\SupportedTypes",
+      ".ico",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\PDFTara Pixel.exe",
+      "",
+      "[#PDFTara PixelExe]"
+    ],
+    [
+      "-1",
+      "Software\\PDFTara Pixel",
+      "InstallDir",
+      "[INSTALLFOLDER]"
+    ]
+  ],
+  "mode": "dualScope"
+}

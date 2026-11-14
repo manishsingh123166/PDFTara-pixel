@@ -1,0 +1,13 @@
+PDFTara Pixel app icon (PDFTara Pixel.svg, PDFTara Pixel-small.svg and every file derived from them in
+this directory: PDFTara Pixel-1024.png, PDFTara Pixel.icns, PDFTara Pixel.ico, hicolor/).
+
+Original artwork made for this project by the project owner: an engraving-style drawing created
+in PDFTara pixel, then vectorised. No third-party material. Licensed like the rest of PDFTara Pixel,
+under either of
+
+  * Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+  * MIT license (https://opensource.org/licenses/MIT)
+
+at your option.
+
+Regenerate the derived files with packaging/icons.sh.

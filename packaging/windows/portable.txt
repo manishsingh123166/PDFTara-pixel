@@ -1,0 +1,9 @@
+PDFTara Pixel portable mode
+
+While this file sits next to PDFTara Pixel.exe, PDFTara Pixel keeps its preferences, brush presets,
+crash-recovery autosaves and startup state in the PDFTara PixelData folder beside it, and writes
+nothing to %APPDATA% or %LOCALAPPDATA%. Copy the whole folder to move PDFTara Pixel with its settings.
+
+Delete this file to use the normal per-user folders instead: %APPDATA%\PDFTara Pixel for settings
+and %LOCALAPPDATA%\PDFTara Pixel\Recovery for crash-recovery autosaves. If PDFTara PixelData can't be
+written (for example on a read-only drive), PDFTara Pixel says so and uses those folders instead.
