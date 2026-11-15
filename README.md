@@ -1,11 +1,8 @@
- <p align="center">
-  <a href="https://www.pdftara.com/">
-    <img src="pdftarapixel.svg" alt="PDFTara Pixel Logo" width="420">
-  </a>
-</p>
 
 <p align="center">
-  <img src="assets/app-icon/pdftarapixel.png" alt="PDFTara Pixel App Icon" width="160" height="160">
+  <a href="https://www.pdftara.com/">
+    <img src="assets/app-icon/pdftarapixel.png" alt="PDFTara Pixel Photo Editor" width="300">
+  </a>
 </p>
 
 <h1 align="center">PDFTara Pixel</h1>
@@ -16,11 +13,15 @@
 
 <p align="center">
   A modern, open-source photo editing application built with Rust.
-  Designed for professional image editing, creative workflows and PSD documents.
+  Designed for creative workflows, professional image editing and PSD documents.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Built%20with-Rust-orange?style=flat-square&logo=rust" alt="Built with Rust">
+  <a href="https://www.pdftara.com/">Official Website</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Built%20with-Rust-orange?style=flat-square&logo=rust" alt="Rust">
   <img src="https://img.shields.io/badge/Open%20Source-Yes-brightgreen?style=flat-square" alt="Open Source">
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square" alt="Platforms">
   <img src="https://img.shields.io/badge/Web-WebAssembly-purple?style=flat-square" alt="WebAssembly">
@@ -31,13 +32,87 @@
 
 ## About PDFTara Pixel
 
-**PDFTara Pixel** is a powerful desktop and browser-based photo editing application developed under the PDFTara brand.
+**PDFTara Pixel** is a desktop and browser-based photo editing application developed under the PDFTara brand.
 
 Built using the Rust programming language, it aims to deliver a modern image editing experience with professional creative tools, advanced layer management and support for industry-standard image formats.
 
 Our goal is to make professional photo editing more accessible while keeping the application open-source and focused on user control.
 
-Website: https://www.pdftara.com/
+**Official Website:** https://www.pdftara.com/
+
+---
+
+## Screenshots & Interface
+
+Explore the PDFTara Pixel interface and its image editing capabilities.
+
+### Main Photo Editor
+
+<p align="center">
+  <img src="docs/images/photocraft-demo.jpg" alt="PDFTara Pixel Main Photo Editor" width="850">
+</p>
+
+### Image Adjustments
+
+<p align="center">
+  <img src="docs/images/photocraft-adjustments.jpg" alt="Image Adjustments" width="850">
+</p>
+
+### Professional Filters
+
+<p align="center">
+  <img src="docs/images/photocraft-filters.jpg" alt="Photo Filters" width="850">
+</p>
+
+### Layer Styles
+
+<p align="center">
+  <img src="docs/images/photocraft-layer-styles.jpg" alt="Layer Styles" width="850">
+</p>
+
+### Layer Masks
+
+<p align="center">
+  <img src="docs/images/photocraft-masks.jpg" alt="Layer Masks" width="850">
+</p>
+
+### Image Transform
+
+<p align="center">
+  <img src="docs/images/photocraft-transform.jpg" alt="Image Transform Tools" width="850">
+</p>
+
+### Typography Tools
+
+<p align="center">
+  <img src="docs/images/photocraft-type.jpg" alt="Typography and Text Editing" width="850">
+</p>
+
+### Vector Editing
+
+<p align="center">
+  <img src="docs/images/photocraft-vector.jpg" alt="Vector Editing" width="850">
+</p>
+
+### Export Options
+
+<p align="center">
+  <img src="docs/images/photocraft-export-light.jpg" alt="Image Export Options" width="850">
+</p>
+
+### Embedded Vector Editor
+
+<p align="center">
+  <img src="docs/images/embedded-vector-editor-en.png" alt="Embedded Vector Editor" width="850">
+</p>
+
+### Embedded Vector Tabs
+
+<p align="center">
+  <img src="docs/images/embedded-vector-tabs-linux.png" alt="Embedded Vector Tabs" width="850">
+</p>
+
+---
 
 ## Key Features
 
@@ -61,7 +136,6 @@ Website: https://www.pdftara.com/
 - Non-destructive adjustment layers
 - Layer opacity and blending modes
 - Clipping masks
-- Smart objects and smart filters
 - Layer effects
 - Group and organize layers
 - Undo and history management
@@ -95,6 +169,8 @@ PDFTara Pixel supports a range of image and document formats, including:
 
 Some formats and advanced features may have limitations depending on the current build.
 
+---
+
 ## Desktop Application
 
 PDFTara Pixel is designed as a native desktop application.
@@ -106,6 +182,8 @@ Supported platforms:
 - Linux
 
 The desktop application uses Rust and a GPU-accelerated rendering architecture.
+
+---
 
 ## Browser-Based Photo Editor
 
@@ -122,6 +200,8 @@ Technology:
 
 The browser version is designed to run without requiring a traditional desktop installation.
 
+---
+
 ## Technology Stack
 
 | Technology | Purpose |
@@ -135,6 +215,8 @@ The browser version is designed to run without requiring a traditional desktop i
 | Cargo | Rust package management |
 | Trunk | Web application build |
 
+---
+
 ## Privacy and User Control
 
 PDFTara Pixel is designed around local-first creative workflows.
@@ -145,6 +227,26 @@ PDFTara Pixel is designed around local-first creative workflows.
 - Open-source development.
 - User-controlled file handling.
 
+---
+
+## AI and Future Development
+
+PDFTara Pixel's development roadmap includes exploring intelligent image editing and local AI capabilities.
+
+Potential areas of future development include:
+
+- AI-powered background removal
+- Smart object selection
+- AI image enhancement
+- Intelligent image processing
+- Local AI model integration
+
+These capabilities are under development or planned and should not be considered fully available unless implemented in a released build.
+
+Our long-term vision is to make powerful creative tools available directly on users' computers.
+
+---
+
 ## Project Status
 
 <sub>Early Alpha — Under Active Development</sub>
@@ -152,6 +254,8 @@ PDFTara Pixel is designed around local-first creative workflows.
 PDFTara Pixel is continuously evolving. Some features are still being improved, and certain professional workflows may have limitations.
 
 Our focus is on improving stability, performance, compatibility and the overall editing experience.
+
+---
 
 ## Roadmap
 
@@ -165,14 +269,15 @@ Our development priorities include:
 - Expanding image format support.
 - Improving Windows, macOS and Linux builds.
 - Enhancing the browser-based editor.
+- Exploring local AI capabilities.
 - Improving stability and usability.
+
+---
 
 ## Brand and Website
 
 <p align="center">
-  <a href="https://www.pdftara.com/">
-    <img src="pdftarapixel.svg" alt="PDFTara Pixel" width="300">
-  </a>
+  <img src="assets/app-icon/pdftarapixel.png" alt="PDFTara Pixel Official Logo" width="180">
 </p>
 
 <p align="center">
@@ -180,7 +285,13 @@ Our development priorities include:
 </p>
 
 <p align="center">
-  Official Website: <a href="https://www.pdftara.com/">https://www.pdftara.com</a>
+  A creative product from PDFTara.
+</p>
+
+<p align="center">
+  <a href="https://www.pdftara.com/">
+    https://www.pdftara.com/
+  </a>
 </p>
 
 ---
